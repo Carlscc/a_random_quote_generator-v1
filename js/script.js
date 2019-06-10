@@ -89,6 +89,7 @@ function printQuote() {
     } else {
         quoteString += "</p>";
     }
+    //future improvement: Use array.splice() to remove items from the array, and return the removed items (to avoid same quote appearing until page reloads).
 
     document.body.style.backgroundColor = newColor; //changes body background with a new color
     document.getElementById('quote-box').innerHTML = quoteString; // displays final HTML string to the page - adds the quote, source, tag and citation & year if applicable

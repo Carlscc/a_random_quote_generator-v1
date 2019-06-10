@@ -28,4 +28,4 @@ Each quote should have the following properties:
 - [x] Refresh the quote after a set amount of time. For example, every 30 seconds, make a new quote appear. 
 
 # View Project
-[Live Demo](https://carlscc.github.io/Treehouse_P1/) of this project for Treehouse review.
+[Live Demo](https://carlscc.github.io/a_random_quote_generator-v1/) of this project for Treehouse review.

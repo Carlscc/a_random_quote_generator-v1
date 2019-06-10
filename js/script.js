@@ -1,6 +1,6 @@
 /******************************************
 Treehouse FSJS Techdegree:
-project 1 - A Random Quote Generator
+project 1 - A Random Quote Generator. Aiming for the 'exceeds expectations' mark!
 ******************************************/
 
 //Array of technology related quotes with source and tags plus one quote with year and citation added
@@ -41,10 +41,9 @@ var quotes = [{
         source: 'Sheryl Sandberg',
         tag: '#Progress'
     },
-    {
-        quote: 'When I look back to my younger self, I would tell myself to be confident first and foremost, to believe in myself, before anyone else because if I believe in myself, then others will too..',
-        source: 'Tiffany Pham',
-        tag: '#Motivation'
+    {   quote: 'Simplicity is about subtracting the obvious and adding the meaningful.',
+        source: 'John Maeda',
+        tag: '#Design'
     },
     {
         quote: 'Do what you love and want to do. Find what you’re good at, what you can sell or provide that is unique to you and go for it.',
@@ -60,11 +59,9 @@ var quotes = [{
 
 function getRandomQuote(array) {
     var quoteIndex = Math.floor(Math.random() * quotes.length); // Generates a random number between 0 and total number of quotes in the array
-    for (var i = 0; i < array.length; i++) { // Loops through the array of quotes
         var randomQuote = array[quoteIndex]; // Random quote variable with the index set to the random number variable
         return randomQuote; // Returns random quote variable
     }
-}
 
 // Creates a random RGB number
 function randomRGB() {

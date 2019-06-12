@@ -80,21 +80,15 @@ function printQuote() {
     // checks if the citation property is present and if so, adds it to the quote string
     if (findQuote.citation) {
         quoteString += "<span class='citation'>" + " " + findQuote.citation + "</span" + "</p>";
-    } else {
-        quoteString += "</p>";
-    }
+    }      
     //checks if the year property is present and if so, adds it to the quote string
     if (findQuote.year) {
         quoteString += "<span class='year'>" + " " + findQuote.year + "</span>" + "</p>";
-    } else {
-        quoteString += "</p>";
     }
     //future improvement: Use array.splice() to remove items from the array, and return the removed items (to avoid same quote appearing until page reloads).
 
     document.body.style.backgroundColor = newColor; //changes body background with a new color
     document.getElementById('quote-box').innerHTML = quoteString; // displays final HTML string to the page - adds the quote, source, tag and citation & year if applicable
-
-    printQuote();
 }
 
 //Generate new quote when 'Show another quote' button is clicked.
